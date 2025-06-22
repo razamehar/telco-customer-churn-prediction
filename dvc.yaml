@@ -32,5 +32,5 @@ stages:
       - src/model_evaluation.py
       - data/featurized/
       - models/
-    outs:
-      - data/evaluation/
+    metrics:
+      - data/evaluation/metrics.json

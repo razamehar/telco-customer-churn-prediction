@@ -84,8 +84,7 @@ stages:
       md5: 256874fd091eb54e831301a418513b8b
       size: 800
     outs:
-    - path: data/evaluation/
+    - path: data/evaluation/metrics.json
       hash: md5
-      md5: 1d56c2b99db8a2755e91e8d2f7194022.dir
+      md5: a1223bb8ad072822fb6ea4db03ede765
       size: 55
-      nfiles: 1
