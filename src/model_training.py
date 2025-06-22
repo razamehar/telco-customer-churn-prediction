@@ -1,11 +1,12 @@
-import numpy as np
 import pandas as pd
-import pickle
 from sklearn.ensemble import RandomForestRegressor
 import joblib
+import os
 
 
-train_df = pd.read_csv('./data/final_train.csv')
+os.makedirs('./models', exist_ok=True)
+
+train_df = pd.read_csv('./data/featurized/final_train.csv')
 
 y_train = train_df['Churn']
 X_train = train_df.drop('Churn', axis=1)

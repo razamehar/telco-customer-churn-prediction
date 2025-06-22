@@ -4,9 +4,11 @@ import joblib
 import os
 
 
-def save_data(df, file_name):
-    df.to_csv("./data/" + file_name, index=False)
-    print(f"{file_name} saved")
+def save_data(df, filename, folder):
+    os.makedirs(f"./data/{folder}", exist_ok=True)
+    path = os.path.join(f"./data/{folder}", filename)
+    df.to_csv(path, index=False)
+    print(f"Saved data to {path}")
 
 
 def standardize_data(train_df, test_df):
@@ -24,8 +26,9 @@ def standardize_data(train_df, test_df):
     train_scaled = scaler.fit_transform(train_df[cols_to_scale])
     test_scaled = scaler.transform(test_df[cols_to_scale])
 
-    os.makedirs("./models", exist_ok=True)
-    joblib.dump(scaler, "./models/standard_scaler.pkl")
+    os.makedirs("./scaling", exist_ok=True)
+    joblib.dump(scaler, "./scaling/standard_scaler.pkl")
+    print("scaler pipeline saved")
 
     train_df[cols_to_scale] = pd.DataFrame(train_scaled, columns=cols_to_scale, index=train_df.index)
     test_df[cols_to_scale] = pd.DataFrame(test_scaled, columns=cols_to_scale, index=test_df.index)

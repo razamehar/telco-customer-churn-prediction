@@ -84,3 +84,6 @@ ENV/
 .env
 .idea
 .idea/
+/data
+/models
+/scaling

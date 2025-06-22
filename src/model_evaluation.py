@@ -2,9 +2,12 @@ import joblib
 from sklearn.metrics import mean_absolute_error, r2_score
 import json
 import pandas as pd
+import os
 
 
-test_df = pd.read_csv('./data/final_test.csv')
+os.makedirs("./data/evaluation", exist_ok=True)
+
+test_df = pd.read_csv('./data/featurized/final_test.csv')
 
 y_test = test_df['Churn']
 X_test = test_df.drop('Churn', axis=1)
@@ -26,6 +29,6 @@ metrics_dict={
     'r2':r2
 }
 
-with open('./models/metrics.json', 'w') as f:
+with open('./data/evaluation/metrics.json', 'w') as f:
     json.dump(metrics_dict, f)
-print("Metrics saved to ../models/metrics.json")
+print("Metrics saved to ../data/evaluation/metrics.json")

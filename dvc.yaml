@@ -1,0 +1,36 @@
+stages:
+  data_ingestion:
+    cmd: python -m src.data_ingestion
+    deps:
+      - src/data_ingestion.py
+      - utils/utils.py
+      - src/data_preprocessing.py
+    outs:
+      - data/ingested/
+      - scaling/
+
+  feature_engineering:
+    cmd: python -m src.feature_engineering
+    deps:
+      - src/feature_engineering.py
+      - utils/utils.py
+      - data/ingested/
+    outs:
+      - data/featurized/
+
+  model_training:
+    cmd: python -m src.model_training
+    deps:
+      - src/model_training.py
+      - data/featurized/
+    outs:
+      - models/
+
+  model_evaluation:
+    cmd: python -m src.model_evaluation
+    deps:
+      - src/model_evaluation.py
+      - data/featurized/
+      - models/
+    outs:
+      - data/evaluation/
