@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Data%20Science/My%20Projects/Telco%20Customer%20Churn%20Prediction/mlruns/0/4996248cdfcf4752b3633b3a7cafd26b/artifacts
+deleted_time: 1750638140981
+end_time: 1750638046473
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 4996248cdfcf4752b3633b3a7cafd26b
+run_name: exultant-pug-925
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750638040583
+status: 3
+tags: []
+user_id: Hp

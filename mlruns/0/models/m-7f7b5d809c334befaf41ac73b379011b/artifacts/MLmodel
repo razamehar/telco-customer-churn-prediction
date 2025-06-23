@@ -1,0 +1,22 @@
+artifact_path: file:///D:/Data%20Science/My%20Projects/Telco%20Customer%20Churn%20Prediction/mlruns/0/models/m-7f7b5d809c334befaf41ac73b379011b/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.13
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.1.0
+model_id: m-7f7b5d809c334befaf41ac73b379011b
+model_size_bytes: 11155406
+model_uuid: m-7f7b5d809c334befaf41ac73b379011b
+prompts: null
+run_id: 2e05f770ac1c407286456ddf17c31da6
+utc_time_created: '2025-06-23 00:18:34.853036'

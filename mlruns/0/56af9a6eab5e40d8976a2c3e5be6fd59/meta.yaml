@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Data%20Science/My%20Projects/Telco%20Customer%20Churn%20Prediction/mlruns/0/56af9a6eab5e40d8976a2c3e5be6fd59/artifacts
+deleted_time: 1750638140984
+end_time: 1750637836387
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 56af9a6eab5e40d8976a2c3e5be6fd59
+run_name: luxuriant-moth-800
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750637834961
+status: 4
+tags: []
+user_id: Hp

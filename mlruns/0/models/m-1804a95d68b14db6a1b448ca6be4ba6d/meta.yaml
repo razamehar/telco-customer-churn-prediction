@@ -1,0 +1,10 @@
+artifact_location: file:///D:/Data%20Science/My%20Projects/Telco%20Customer%20Churn%20Prediction/mlruns/0/models/m-1804a95d68b14db6a1b448ca6be4ba6d/artifacts
+creation_timestamp: 1750638042077
+experiment_id: '0'
+last_updated_timestamp: 1750638046452
+model_id: m-1804a95d68b14db6a1b448ca6be4ba6d
+model_type: null
+name: model
+source_run_id: 4996248cdfcf4752b3633b3a7cafd26b
+status: 2
+status_message: null
