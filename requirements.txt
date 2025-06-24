@@ -1,10 +1,10 @@
 pandas
 numpy
 scikit-learn
-matplotlib
 kagglehub
 dvc
 mlflow==2.2.2
 dagshub
 pydantic
 fastapi[standard]
+joblib
