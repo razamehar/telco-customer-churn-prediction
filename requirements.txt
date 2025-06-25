@@ -8,3 +8,4 @@ dagshub
 pydantic
 fastapi[standard]
 joblib
+alibi_detect
