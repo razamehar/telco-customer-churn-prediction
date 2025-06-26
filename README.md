@@ -12,10 +12,13 @@ The project focuses on predicting customer churn for a telecom company using ML 
 - Model training using Random Forest with MLflow logging
 - Model evaluation with accuracy and precision metrics
 - Model persistence with joblib
-- Testing using pytest
+- Testing using `pytest`
+- Code linting using `pylint`
 - API deployment using FastAPI
 - Experiment tracking using MLflow + DagsHub
 - Feature scaling using StandardScaler
+- Data versioning using DVC
+- Docker containerization for consistent reproducibility
 
 ## Example FastAPI Usage
 
@@ -52,12 +55,14 @@ Response
 
 ## Tech Stack
 
-- Python 3.10
-- pandas, scikit-learn, joblib
-- MLflow, DagsHub
-- FastAPI
-- KaggleHub (for dataset ingestion)
-- pytest (for testing)
+- **Python 3.10**
+- **Data & Modeling**: pandas, scikit-learn, joblib
+- **Experiment Tracking**: MLflow, DagsHub
+- **API & Deployment**: FastAPI
+- **Containerization**: Docker
+- **Data Ingestion**: Kaggle (via kaggle CLI or KaggleHub)
+- **Version Control**: DVC (Data Version Control)
+- **Testing & Code Quality**: pytest, pylint
 
 ## MLflow Experiment Tracking
 
@@ -80,12 +85,27 @@ pip install -r requirements.txt
 3. Start FastAPI app
 ```bash
 uvicorn app.main:app --reload
-
 ```
+
+## Docker Support
+### Build Docker Image
+```bash
+docker build -t churn-predictor .
+```
+
+### Run Docker Container
+```bash
+docker run -d -p 8000:8000 churn-predictor
+``` 
 
 ## Run Tests
 ```bash
 pytest tests/
+```
+
+## Run Linting
+```bash
+pylint app/*.py
 ```
 
 ## Contact
