@@ -19,6 +19,8 @@ The project focuses on predicting customer churn for a telecom company using ML 
 - Feature scaling using StandardScaler
 - Data versioning using DVC
 - Docker containerization for consistent reproducibility
+- CI/CD pipeline using GitHub Actions
+- Model artifacts pulled from GitHub Releases during build
 
 ## Example FastAPI Usage
 
@@ -60,6 +62,7 @@ Response
 - **Experiment Tracking**: MLflow, DagsHub
 - **API & Deployment**: FastAPI
 - **Containerization**: Docker
+- **CI/CD**: GitHub Actions
 - **Data Ingestion**: Kaggle (via kaggle CLI or KaggleHub)
 - **Version Control**: DVC (Data Version Control)
 - **Testing & Code Quality**: pytest, pylint
@@ -107,6 +110,16 @@ pytest tests/
 ```bash
 pylint app/*.py
 ```
+
+## CI/CD with GitHub Actions
+This project includes a CI/CD pipeline using GitHub Actions that:
+
+- Installs dependencies
+- Runs tests with pytest
+- Lints code using pylint
+- Builds the Docker image
+- Ensures model and scaler are downloaded from GitHub Releases
+- CI config: .github/workflows/main.yml
 
 ## Contact
 For any questions or clarifications, please contact Raza Mehar at [raza.mehar@gmail.com](mailto:raza.mehar@gmail.com).
