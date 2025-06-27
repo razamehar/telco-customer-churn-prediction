@@ -8,8 +8,12 @@ WORKDIR /app
 COPY app.py /app/
 COPY requirements.txt /app/
 COPY schema.py /app/
-COPY models /app/models
-COPY scaling /app/scaling
+
+# Fetch model and scaler from GitHub releases
+RUN mkdir -p /app/models /app/scaling
+RUN curl -L -o /app/models/model.pkl https://github.com/username/repo/releases/download/v1.0/model.pkl
+RUN curl -L -o /app/scaling/scaler.pkl https://github.com/username/repo/releases/download/v1.0/scaler.pkl
+
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
