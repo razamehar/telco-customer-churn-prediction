@@ -22,7 +22,7 @@ The project focuses on predicting customer churn for a telecom company using ML 
 - CI/CD pipeline using GitHub Actions
 - Model artifacts pulled from GitHub Releases during build
 
-## Example FastAPI Usage
+## FastAPI Usage - Example
 
 ### Root Endpoint
 ``` http
