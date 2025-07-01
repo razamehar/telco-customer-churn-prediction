@@ -1,8 +1,6 @@
 # Telco Customer Churn Prediction
 
-This repository contains an end-to-end **MLOps project** built as a final assignment for the [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) organized by **DataTalksClub** (site: https://datatalks.club/) and taught by **Alexey Grigorev**.  
-
-The project focuses on predicting customer churn for a telecom company using ML pipelines, data versioning, experiment tracking, and model deployment via FastAPI.
+This repository contains an end-to-end **MLOps project** that focuses on predicting customer churn for a telecom company using ML pipelines, data versioning, experiment tracking, and model deployment via FastAPI.
 
 ## Features
 
@@ -120,6 +118,12 @@ This project includes a CI/CD pipeline using GitHub Actions that:
 - Builds the Docker image
 - Ensures model and scaler are downloaded from GitHub Releases
 - CI config: .github/workflows/main.yml
+
+## Note
+This project is a final assignment for the [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) organized by **DataTalksClub** (site: https://datatalks.club/) and taught by **Alexey Grigorev**.  
+
+## License
+This project is licensed under the MIT License.
 
 ## Contact
 For any questions or clarifications, please contact Raza Mehar at [raza.mehar@gmail.com](mailto:raza.mehar@gmail.com).
